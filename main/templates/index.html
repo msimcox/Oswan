@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -8,14 +9,14 @@
     <meta name="description" content="Live Preview Of Oswan eCommerce HTML5 Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.png'%}">
 
     <!-- all css here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/bundle.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/bundle.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css'%}">
 </head>
 <body>
     <div class="wrapper">
@@ -26,7 +27,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-4">
                             <div class="logo-small-device">
-                                <a href="index.html"><img alt="" src="assets/img/logo/logo.png"></a>
+                                <a href="index.html"><img alt="" src="{% static 'assets/img/logo/logo.png'%}"></a>
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-8 col-8">
