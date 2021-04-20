@@ -1,0 +1,115 @@
+[
+{
+  "model": "main.motorcycle",
+  "pk": 1,
+  "fields": {
+    "name": "Gloriori GSX 250 R",
+    "year": "2018.00",
+    "size": "270 CC",
+    "img_url": "static/images/product/product-1.jpg"
+  }
+},
+{
+  "model": "main.motorcycle",
+  "pk": 2,
+  "fields": {
+    "name": "Klager GSX 250 R",
+    "year": "2019.00",
+    "size": "300 CC",
+    "img_url": "static/images/product/product-2.jpg"
+  }
+},
+{
+  "model": "main.motorcycle",
+  "pk": 3,
+  "fields": {
+    "name": "Matrio Max",
+    "year": "2020.00",
+    "size": "250 CC",
+    "img_url": "static/images/product/product-3.jpg"
+  }
+},
+{
+  "model": "main.motorcycle",
+  "pk": 4,
+  "fields": {
+    "name": "Demonissi Gori",
+    "year": "2021.00",
+    "size": "150 CC",
+    "img_url": "static/images/product/product-4.jpg"
+  }
+},
+{
+  "model": "main.motorcycle",
+  "pk": 5,
+  "fields": {
+    "name": "Maxclon ZPE 54",
+    "year": "2010.00",
+    "size": "280 CC",
+    "img_url": "static/images/product/product-5.jpg"
+  }
+},
+{
+  "model": "main.motorcycle",
+  "pk": 6,
+  "fields": {
+    "name": "Rigoniss Z 1000",
+    "year": "2005.00",
+    "size": "290 CC",
+    "img_url": "static/images/product/product-6.jpg"
+  }
+},
+{
+  "model": "main.motorcycle",
+  "pk": 7,
+  "fields": {
+    "name": "Yamaha R1",
+    "year": "2008.00",
+    "size": "600 CC",
+    "img_url": "static/procuct/product-1.jpg"
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$216000$Os38wNMMEY18$WfczcIh/aURYw8IjIaeenvRmFo5jdGuiGzBTfR9R5/o=",
+    "last_login": "2021-02-16T00:00:46.062Z",
+    "is_superuser": true,
+    "username": "sim",
+    "first_name": "",
+    "last_name": "",
+    "email": "msimcox84@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-02-15T23:59:36.945Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7b7gwhjsnd9h6jw8amd7j6cmap5mnom4",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pACUwZduu8ZyJQZpGpoUtqV8e7apAvd_vfef6lI21ri1mSJE6uLMur0u42UHlJ3wHeqt1mnua7LNOpd0QdtephZntfD_Tso1Mq3dogGhbAD4i5Btk5QWMCDs0zSnzt2Fg1xkOAdUA5J-kCQfMqQ0an3B-T4ODo:1lBnnK:dcJGF0Cx7AWlQWCDb-OeYIrxokcQAL06vCxEtfcIx54",
+    "expire_date": "2021-03-02T00:00:46.073Z"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2021-02-16T00:12:56.457Z",
+    "user": [
+      "sim"
+    ],
+    "content_type": [
+      "main",
+      "motorcycle"
+    ],
+    "object_id": "7",
+    "object_repr": "Yamaha R1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]
