@@ -26,6 +26,7 @@ urlpatterns = [
     #url(r'^([0-9]+)/$', views.detail1, name = 'detail1'),
 
     url(r'^([0-9]+)/$', views.detail2, name = 'detail2'),
+    url(r'^post_url/$', views.post_moto, name='post_moto'),
 ]
 
 if settings.DEBUG:
