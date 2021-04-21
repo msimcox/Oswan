@@ -1,125 +1,140 @@
+{% extends 'base.html' %}
 {% load static %}
-<!doctype html>
-<html class="no-js" lang="zxx">
-
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Oswan - eCommerce HTML5 Template</title>
-        <meta name="description" content="Live Preview Of Oswan eCommerce HTML5 Template">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-
-        <!-- all css here -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/icofont.css">
-        <link rel="stylesheet" href="assets/css/themify-icons.css">
-        <link rel="stylesheet" href="assets/css/bundle.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
-    </head>
-
-    <body>
-        <div class="wrapper">
-            <!-- header start -->
-            <header>
-                <div class="header-area transparent-bar ptb-55">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-4">
-                                <div class="logo-small-device">
-                                    <a href="index.html"><img alt="" src="{% static 'assets/img/logo/logo.png'%}"></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 col-md-8 col-8">
-                                <div class="menu-wrapper text-center">
-                                    <div class="main-menu open">
-                                        <nav>
-                                            <ul>
-                                                <li><a href="index.html">home</a></li>
-                                                <li class="active"><a href="about-us.html">about us</a></li>
-                                                <li><a href="#">shop</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">shop</a></li>
-                                                        <li><a href="product-details.html">product details</a></li>
-                                                        <li><a href="checkout.html">checkout</a></li>
-                                                        <li><a href="wishlist.html">wishlist</a></li>
-                                                        <li><a href="cart.html">cart</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="contact.html">contact us</a></li>
-                                            </ul>
-                                        </nav>
+{% block content %}
+        <div class="product-details-area fluid-padding-3 ptb-130">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="product-details-img-content">
+                            <div class="product-details-tab mr-40">
+                                <div class="product-details-large tab-content">
+                                    <div class="tab-pane active" id="pro-details1">
+                                        <div class="easyzoom easyzoom--overlay">
+                                            <a href="{{ motorcycle.image.url }}">
+                                                <img src="{{ motorcycle.image.url }}" alt="">
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-6">
+                        <div class="product-details-content">
+                            <h2>{{ motorcycle.name }}</h2>
+                            <div class="product-price">
+                                <span>Production year:{{ motorcycle.year }}</span>
+                            </div>
+                            <div class="product-price">
+                                <span>Engine size:{{ motorcycle.size }}</span>
+                            </div>
+                            <div class="product-overview">
+                                <h5 class="pd-sub-title">Product Overview</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                            </div>
+                            <div class="quickview-plus-minus">
+                                <div class="quickview-btn-cart">
+                                    <a class="btn-style cr-btn" href="#"><span>add to cart</span></a>
+                                </div>
+                                <div class="quickview-btn-wishlist">
+                                    <a class="btn-hover cr-btn" href="#"><span><i class="icofont icofont-heart-alt"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </header>
-            <div class="product-details-area fluid-padding-3 ptb-130">
-                <div class="container-fluid">
+            </div>
+        </div>
+        <footer>
+            <div class="footer-top pt-210 pb-98 theme-bg">
+                <div class="container">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <div class="product-details-img-content">
-                                <div class="product-details-tab mr-40">
-                                    <div class="product-details-large tab-content">
-                                        <div class="tab-pane active" id="pro-details1">
-                                            <div class="easyzoom easyzoom--overlay">
-                                                <a href="assets/img/product-details/bl1.jpg">
-                                                    <img src="{% static 'assets/img/product-details/l1.jpg'%}" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="pro-details2">
-                                            <div class="easyzoom easyzoom--overlay">
-                                                <a href="assets/img/product-details/bl2.jpg">
-                                                    <img src="{% static 'assets/img/product-details/l2.jpg'%}" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="pro-details3">
-                                            <div class="easyzoom easyzoom--overlay">
-                                                <a href="assets/img/product-details/bl3.jpg">
-                                                    <img src="{% static 'assets/img/product-details/l3.jpg'%}" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="pro-details4">
-                                            <div class="easyzoom easyzoom--overlay">
-                                                <a href="assets/img/product-details/bl4.jpg">
-                                                    <img src="{% static 'assets/img/product-details/l4.jpg'%}" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="pro-details5">
-                                            <div class="easyzoom easyzoom--overlay">
-                                                <a href="assets/img/product-details/bl3.jpg">
-                                                    <img src="{% static 'assets/img/product-details/l3.jpg'%}" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="footer-widget mb-30">
+                                <div class="footer-logo">
+                                    <a href="index.html">
+                                        <img src="{% static 'assets/img/logo/2.png'%}" alt="">
+                                    </a>
+                                </div>
+                                <div class="footer-about">
+                                    <p><span>OSWAN</span> the most latgest bike store in the wold can serve you latest ulity of motorcycle soucan sell here your motorcycle it quo </p>
+                                    <div class="footer-support">
+                                        <h5>FOR SUPPORT</h5>
+                                        <span> 01245 658 698 (Toll Free)</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="product-details-content">
-                                <h2>Klager GSX 250 R</h2>
-                                <div class="product-price">
-                                    <span>$2549</span>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="footer-widget mb-30 pl-60">
+                                <div class="footer-widget-title">
+                                    <h3>QUICK LINK</h3>
                                 </div>
-                                <div class="product-overview">
-                                    <h5 class="pd-sub-title">Product Overview</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                <div class="quick-links">
+                                    <ul>
+                                        <li><a href="about-us.html">About us</a></li>
+                                        <li><a href="#">Service</a></li>
+                                        <li><a href="#">Inventory</a></li>
+                                        <li><a href="shop.html">Shop</a></li>
+                                        <li><a href="blog-sidebar.html">Blog</a></li>
+                                        <li><a href="#">Conditions</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
                                 </div>
-                                <div class="quickview-plus-minus">
-                                    <div class="quickview-btn-cart">
-                                        <a class="btn-style cr-btn" href="#"><span>add to cart</span></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="footer-widget mb-30">
+                                <div class="footer-widget-title">
+                                    <h3>LATEST TWEET</h3>
+                                </div>
+                                <div class="food-widget-content pr-30">
+                                    <div class="single-tweet">
+                                        <p><a href="#">@Smith,</a> the most latgest bike store in the wold can serve you 
+10 min ago</p>
                                     </div>
-                                    <div class="quickview-btn-wishlist">
-                                        <a class="btn-hover cr-btn" href="#"><span><i class="icofont icofont-heart-alt"></i></span></a>
+                                    <div class="single-tweet">
+                                        <p><a href="#">@Smith,</a> the most latgest bike store in the wold can serve you 
+10 min ago</p>
+                                    </div>
+                                    <div class="single-tweet">
+                                        <p><a href="#">@Smith,</a> the most latgest bike store in the wold can serve you 
+10 min ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="footer-widget mb-30">
+                                <div class="footer-widget-title">
+                                    <h3>CONTACT INFO</h3>
+                                </div>
+                                <div class="food-info-wrapper">
+                                    <div class="food-address">
+                                        <div class="food-info-title">
+                                            <span>Address</span>
+                                        </div>
+                                        <div class="food-info-content">
+                                            <p>276 Jhilli Nogor, 4th folor, Momen Tower, Main Town, New Yourk</p>
+                                        </div>
+                                    </div>
+                                    <div class="food-address">
+                                        <div class="food-info-title">
+                                            <span>Phone</span>
+                                        </div>
+                                        <div class="food-info-content">
+                                            <p>+090 12568 369 987</p>
+                                            <p>+090 12568 369 987</p>
+                                        </div>
+                                    </div>
+                                    <div class="food-address">
+                                        <div class="food-info-title">
+                                            <span>Web</span>
+                                        </div>
+                                        <div class="food-info-content">
+                                            <a href="#">info@oswanmega.com</a>
+                                            <a href="#">www.oswanmega.com</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -127,142 +142,46 @@
                     </div>
                 </div>
             </div>
-            <footer>
-                <div class="footer-top pt-210 pb-98 theme-bg">
-                    <div class="container">
-                       <div class="row">
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <div class="footer-widget mb-30">
-                                    <div class="footer-logo">
-                                        <a href="index.html">
-                                            <img src="{% static 'assets/img/logo/2.png'%}" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="footer-about">
-                                        <p><span>OSWAN</span> the most latgest bike store in the wold can serve you latest ulity of motorcycle soucan sell here your motorcycle it quo </p>
-                                        <div class="footer-support">
-                                            <h5>FOR SUPPORT</h5>
-                                            <span> 01245 658 698 (Toll Free)</span>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="footer-bottom ptb-35 black-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-12">
+                            <div class="copyright">
+                                <p>©Copyright, 2018 All Rights Reserved by <a href="https://freethemescloud.com/">Free themes Cloud</a></p>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <div class="footer-widget mb-30 pl-60">
-                                    <div class="footer-widget-title">
-                                        <h3>QUICK LINK</h3>
-                                    </div>
-                                    <div class="quick-links">
-                                        <ul>
-                                            <li><a href="about-us.html">About us</a></li>
-                                            <li><a href="#">Service</a></li>
-                                            <li><a href="#">Inventory</a></li>
-                                            <li><a href="shop.html">Shop</a></li>
-                                            <li><a href="blog-sidebar.html">Blog</a></li>
-                                            <li><a href="#">Conditions</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <div class="footer-widget mb-30">
-                                    <div class="footer-widget-title">
-                                        <h3>LATEST TWEET</h3>
-                                    </div>
-                                    <div class="food-widget-content pr-30">
-                                        <div class="single-tweet">
-                                            <p><a href="#">@Smith,</a> the most latgest bike store in the wold can serve you 
-10 min ago</p>
-                                        </div>
-                                        <div class="single-tweet">
-                                            <p><a href="#">@Smith,</a> the most latgest bike store in the wold can serve you 
-10 min ago</p>
-                                        </div>
-                                        <div class="single-tweet">
-                                            <p><a href="#">@Smith,</a> the most latgest bike store in the wold can serve you 
-10 min ago</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <div class="footer-widget mb-30">
-                                    <div class="footer-widget-title">
-                                        <h3>CONTACT INFO</h3>
-                                    </div>
-                                    <div class="food-info-wrapper">
-                                        <div class="food-address">
-                                            <div class="food-info-title">
-                                                <span>Address</span>
-                                            </div>
-                                            <div class="food-info-content">
-                                                <p>276 Jhilli Nogor, 4th folor, Momen Tower, Main Town, New Yourk</p>
-                                            </div>
-                                        </div>
-                                        <div class="food-address">
-                                            <div class="food-info-title">
-                                                <span>Phone</span>
-                                            </div>
-                                            <div class="food-info-content">
-                                                <p>+090 12568 369 987</p>
-                                                <p>+090 12568 369 987</p>
-                                            </div>
-                                        </div>
-                                        <div class="food-address">
-                                            <div class="food-info-title">
-                                                <span>Web</span>
-                                            </div>
-                                            <div class="food-info-content">
-                                                <a href="#">info@oswanmega.com</a>
-                                                <a href="#">www.oswanmega.com</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="footer-payment-method">
+                                <a href="#"><img alt="" src="{% static 'assets/img/icon-img/payment.png'%}"></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer-bottom ptb-35 black-bg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-8 col-12">
-                                <div class="copyright">
-                                    <p>©Copyright, 2018 All Rights Reserved by <a href="https://freethemescloud.com/">Free themes Cloud</a></p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12">
-                                <div class="footer-payment-method">
-                                    <a href="#"><img alt="" src="{% static 'assets/img/icon-img/payment.png'%}"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-        
-        
-        
-		
-		
-		
-		
-		
-		
-		
-		
-		<!-- all js here -->
-        <script src="{% static 'assets/js/vendor/jquery-1.12.0.min.js'%}"></script>
-        <script src="{% static 'assets/js/popper.js'%}"></script>
-        <script src="{% static 'assets/js/bootstrap.min.js'%}"></script>
-        <script src="{% static 'assets/js/isotope.pkgd.min.js'%}"></script>
-        <script src="{% static 'assets/js/imagesloaded.pkgd.min.js'%}"></script>
-        <script src="{% static 'assets/js/jquery.counterup.min.js'%}"></script>
-        <script src="{% static 'assets/js/waypoints.min.js'%}"></script>
-        
-        <script src="{% static 'assets/js/owl.carousel.min.js'%}"></script>
-        <script src="{% static 'assets/js/main.js'%}"></script>
-    </body>
+            </div>
+        </footer>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- all js here -->
+    <script src="{% static 'assets/js/vendor/jquery-1.12.0.min.js'%}"></script>
+    <script src="{% static 'assets/js/popper.js'%}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/js/imagesloaded.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/js/jquery.counterup.min.js'%}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js'%}"></script>
+    
+    <script src="{% static 'assets/js/owl.carousel.min.js'%}"></script>
+    <script src="{% static 'assets/js/main.js'%}"></script>
+</body>
 </html>
+{% endblock %}

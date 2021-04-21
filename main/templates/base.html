@@ -1,0 +1,61 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Oswan - eCommerce HTML5 Template</title>
+    <meta name="description" content="Live Preview Of Oswan eCommerce HTML5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.png'%}">
+
+    <!-- all css here -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/bundle.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/icofont.css'%}">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- header start -->
+        <header>
+            <div class="header-area transparent-bar ptb-55">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-4">
+                            <div class="logo-small-device">
+                                <a href="index.html"><img alt="" src="{% static 'assets/img/logo/logo.png'%}"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-8">
+                            <div class="menu-wrapper text-center">
+                                <div class="main-menu open">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="index.html">home</a></li>
+                                            <li class="active"><a href="about-us.html">about us</a></li>
+                                            <li><a href="#">shop</a>
+                                                <ul>
+                                                    <li><a href="shop.html">shop</a></li>
+                                                    <li><a href="product-details.html">product details</a></li>
+                                                    <li><a href="checkout.html">checkout</a></li>
+                                                    <li><a href="wishlist.html">wishlist</a></li>
+                                                    <li><a href="cart.html">cart</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">contact us</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+{% block content %}
+{% endblock %}
