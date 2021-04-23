@@ -27,6 +27,7 @@ urlpatterns = [
 
     url(r'^([0-9]+)/$', views.detail2, name = 'detail2'),
     url(r'^post_url/$', views.post_moto, name='post_moto'),
+    url(r'^user/(\w+)/$', views.profile, name='profile'),
 ]
 
 if settings.DEBUG:

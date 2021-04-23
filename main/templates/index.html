@@ -44,11 +44,11 @@
                                             <div class="product-list-details">
                                                 <h2><a href="product-details.html">Gloriori GSX 250 R</a></h2>
                                                 <div class="quick-view-rating">
-                                                    <i class="fa fa-star reting-color"></i>
-                                                    <i class="fa fa-star reting-color"></i>
-                                                    <i class="fa fa-star reting-color"></i>
-                                                    <i class="fa fa-star reting-color"></i>
-                                                    <i class="fa fa-star reting-color"></i>
+                                                    <i class="fa fa-star resting-color"></i>
+                                                    <i class="fa fa-star resting-color"></i>
+                                                    <i class="fa fa-star resting-color"></i>
+                                                    <i class="fa fa-star resting-color"></i>
+                                                    <i class="fa fa-star resting-color"></i>
                                                 </div>
                                                 <div class="product-price">
                                                     <span>$2549</span>
@@ -74,6 +74,7 @@
                 </div>
             </div>
         </div>
+        {% if user.is_authenticated %}
         <div class="add-moto-form">
             <div class="container">
                 <h2>Add new motorcycle</h2>
@@ -90,6 +91,7 @@
                 </form>
             </div>
         </div>
+        {% endif %}
         <footer>
             <div class="footer-top pt-90 pb-50 theme-bg">
                 <div class="container">
