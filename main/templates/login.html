@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
             <div class="login-register-area ptb-130">
                 <div class="container">
                     <div class="row">
@@ -7,9 +10,11 @@
                                     <div id="lg1" class="tab-pane active">
                                         <div class="login-form-container">
                                             <div class="login-form">
-                                                <form action="#" method="post">
-                                                    <input type="text" name="user-name" placeholder="Username">
-                                                    <input type="password" name="user-password" placeholder="Password">
+                                                <form action="." method="post">
+                                                    {% csrf_token %}
+                                                    {{ form.as_p }}
+                                                    <!-- <input type="text" name="user-name" placeholder="Username">
+                                                    <input type="password" name="user-password" placeholder="Password"> -->
                                                     <div class="button-box"></div>
                                                         <button type="submit" class="btn-style cr-btn"><span>Login</span></button>
                                                     </div>
@@ -163,3 +168,4 @@
         <script src="assets/js/main.js"></script>
     </body>
 </html>
+{% endblock %}
