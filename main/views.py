@@ -28,4 +28,4 @@ def post_moto(request):
 def profile(request, username):
     user = User.objects.get(username=username)
     motorcycles = Motorcycle.objects.filter(user=user)
-    return render(request, 'profile.html', {'username':username,' motorcycles': motorcycles})
+    return render(request, 'profile.html', {'username':username,'motorcycles': motorcycles})

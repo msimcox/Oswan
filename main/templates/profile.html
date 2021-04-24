@@ -1,21 +1,46 @@
+{% extends 'base.html' %}
 {% load static %}
-<!doctype html>
-<html>
-<head>
-    <title>Oswan - eCommerce HTML5 Template</title>
-
-
-
-</head>
-
-
-                <h1>TEMPORARY2</h1>
-                <P>TEST</P>
+{% block content %}
+<div class="shop-wrapper fluid-padding-2 pt-150 pb-50">
+  <h1>{{ username }}</h1><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="grid-list-product-wrapper tab-content">
+          <div id="new-product" class="product-grid product-view tab-pane active product-grid">
+              <div class="row">
                 {% for motorcycle in motorcycles %}
-                <P>blaaaaaaaaaaaaaaaaab</P>
-
-    {% endfor %}
-
+                  <div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <a href="/{{motorcycle.id}}/">
+                        <div class="">
+                          <h3 class="">{{ motorcycle.name }}</h3>
+                        </div>
+                      </a>
+                      <div class="">
+                        <a href="/{{motorcycle.id}}/">
+                          <div class="treasure-photo">
+                            <img src="{{ motorcycle.image.url }}" >
+                          </div>
+                        </a>
+                        <!-- <button id ="likes" data-id="{{motorcycle.id}}" class="btn btn-mini btn-danger glyphicon glyphicon-heart" type="button">
+                          {% if motorcycle.likes > 0 %} {{ motorcycle.likes }} {% endif %}
+                        </button> -->
+                      </div>
+                    </div>
+                  </div>
+                <!-- if last column in row -->
+                <!-- {% if forloop.counter|divisibleby:"3" and not forloop.last %}
+                  </div><br><div class="row">
+                {% endif %} -->
+              {% endfor %}
+            </div><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
-
 </html>
+{% endblock %}
