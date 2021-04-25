@@ -65,7 +65,7 @@ def like_motorcycle(request):
 
     likes = 0
     if (motorcycle_id):
-        motorcycle = Motorcyle.objects.get(id=int(motorcycle_id))
+        motorcycle = Motorcycle.objects.get(id=int(motorcycle_id))
         if motorcycle is not None:
             likes = motorcycle.likes + 1
             motorcycle.likes = likes
